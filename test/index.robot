@@ -4,8 +4,7 @@ Library    random
 Resource          ../resources/variables.robot
 Resource          ../resources/keywords.robot
 Test Setup       Open Browser To Homepage
-Test Teardown    Close Browser
-
+Test Teardown    Custom Test Teardown
 *** Test Cases ***
 #TC_01 註冊新帳號成功
 Register New Account Successfully
@@ -128,7 +127,7 @@ Complete Checkout Successfully
     Go To Login Page
     Enter invalid login information    ${EMAIL}    ${PASSWORD}
     Click Login
-    Sleep    5s
+    Sleep    6s
     Scroll Down Slightly
     Hover And Click Add To Cart   
     Wait Until Element Is Visible    xpath=//u[text()='View Cart']

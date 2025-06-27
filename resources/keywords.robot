@@ -2,6 +2,9 @@
 Library    SeleniumLibrary
 Resource          ../resources/variables.robot
 *** Keywords ***
+Custom Test Teardown
+    Run Keyword If Test Failed    Capture Page Screenshot
+    Close Browser
 Open Browser To Homepage
     Open Browser    https://automationexercise.com    chrome
     Maximize Browser Window
