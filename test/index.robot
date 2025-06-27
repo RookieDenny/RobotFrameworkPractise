@@ -58,7 +58,7 @@ Login failed and error message is displayed
 
 #TC_04 將產品加入購物車並驗證
 Add product to cart and verify
-    [Tags]    cart1
+    [Tags]    add to the cart
     Hover And Click Add To Cart
     Wait Until Element Is Visible    xpath=//u[text()='View Cart']
     Click on the shopping cart
@@ -88,7 +88,7 @@ Search Product And Verify Results
 
 #TC_06 從購物車中刪除產品
 Delete Product From Cart
-    [Tags]    cart
+    [Tags]    Shopping cart delete
     Hover And Click Add To Cart    
     Wait Until Element Is Visible    xpath=//u[text()='View Cart']
     Click on the shopping cart

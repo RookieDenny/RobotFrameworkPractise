@@ -1,5 +1,5 @@
 # RobotFramework
-### Automation Exercise為測試網站，撰寫測試並使用RobotFramework進行測試。<br>
+### Automation Exercise為測試網站，撰寫測試案例並使用RobotFramework進行測試。<br>
 #### 測試網站:<br>
 https://automationexercise.com/<br>
 #### 測試案例:<br>
