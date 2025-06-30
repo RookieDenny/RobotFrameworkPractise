@@ -127,9 +127,8 @@ Complete Checkout Successfully
     Go To Login Page
     Enter invalid login information    ${EMAIL}    ${PASSWORD}
     Click Login
-    Sleep    6s
-    Scroll Down Slightly
-    Hover And Click Add To Cart   
+    #使用 JS 點擊，避免與畫面互動
+    Execute JavaScript    document.querySelectorAll("a.btn.add-to-cart")[0].click()
     Wait Until Element Is Visible    xpath=//u[text()='View Cart']
     Click on the shopping cart
 

@@ -26,6 +26,3 @@ Hover And Click Add To Cart
 
 Click on the shopping cart
     Click Element    xpath=//u[text()='View Cart']
-
-Scroll Down Slightly
-    Execute JavaScript    window.scrollBy(0, 700)
